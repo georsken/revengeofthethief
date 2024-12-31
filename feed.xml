@@ -3,7 +3,7 @@
     <title>Η ΕΚΔΙΚΗΣΗ ΤΟΥ ΚΛΕΦΤΗ</title>
     <link href="https://georsken.github.io/revengeofthethief/feed.xml" rel="self" />
     <link href="https://georsken.github.io/revengeofthethief" />
-    <updated>2024-12-31T19:39:36+02:00</updated>
+    <updated>2024-12-31T19:42:07+02:00</updated>
     <author>
         <name>Η εκδίκηση του κλέφτη</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://georsken.github.io/revengeofthethief/eisagogi/"/>
         <id>https://georsken.github.io/revengeofthethief/eisagogi/</id>
 
-        <updated>2024-12-31T19:39:36+02:00</updated>
+        <updated>2024-12-31T19:42:07+02:00</updated>
             <summary>
                 <![CDATA[
                     Η Αναζήτηση του Αυτοκρατορικού Θησαυρού Μέσα από τις σκιές μιας κατακερματισμένης αυτοκρατορίας, έξι αταίριαστοι περιπλανώμενοι βρίσκονται να βαδίζουν στον ίδιο δρόμο, ενωμένοι από την&hellip;
@@ -49,19 +49,21 @@
 </ul>
 <p> </p>
 <h1>Dice Simulator</h1>
-<p>Click on a die to roll it!</p>
+<p>Click the button to roll all dice! <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">🎲</span></p>
 <div class="dice-container">
-<div class="dice">🎲</div>
-<div class="dice">🎲</div>
-<div class="dice">🎲</div>
-<div class="dice">🎲</div>
+<div class="dice"> </div>
 </div>
+<p><button class="roll-button">Roll Dice</button>
 <script>
-        function rollDice(diceElement) {
-            const roll = Math.floor(Math.random() * 6) + 1;
-            diceElement.textContent = roll;
+        function rollAllDice() {
+            const diceElements = document.querySelectorAll('.dice');
+            diceElements.forEach(dice => {
+                const roll = Math.floor(Math.random() * 6) + 1;
+                dice.textContent = roll;
+            });
         }
     </script>
+</p>
             ]]>
         </content>
     </entry>
