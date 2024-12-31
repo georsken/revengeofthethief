@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://georsken.github.io/revengeofthethief/sitemap.xml
